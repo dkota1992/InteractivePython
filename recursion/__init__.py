@@ -39,10 +39,19 @@ def bubblesort(array):
             array = swap(array,i,i+1)
     return array
         
+from required import Queue
+import random
 
 def main():
-    array = [9,8,7,6,5,4,3,2,1]
-    print(bubblesort(array))
+    a = Queue()
+    a.add(44)
+    a.add(53)
+    a.add(22)
+    a.add(51)
+    a.add(500)
+    a.add(53)
+    print(a.next())
+    print(a.report())
     
 if __name__ == '__main__':
     main()

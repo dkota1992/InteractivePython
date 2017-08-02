@@ -17,3 +17,21 @@ class Stack(object):
     
     def size(self):
         return len(self.items)
+    
+class Queue(object):
+    
+    def __init__(self):
+        self.items = []
+        
+    def size(self):
+        return len(self.items)
+    
+    def add(self,value):
+        self.items.append(value)
+        
+    def next(self):
+        temp = self.items[0]
+        del self.items[0]
+        return temp
+    def report(self):
+        print(self.items)
